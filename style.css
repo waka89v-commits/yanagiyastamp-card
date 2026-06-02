@@ -5,246 +5,225 @@
 }
 
 body{
-  font-family: "Zen Maru Gothic", sans-serif;
-
-  background:
-    repeating-linear-gradient(
-      45deg,
-      #e4f6ff,
-      #e4f6ff 24px,
-      #f4fbff 24px,
-      #f4fbff 48px
-    );
-
-  color:#2f84c8;
   min-height:100vh;
+  font-family:"Zen Maru Gothic", sans-serif;
+  color:#247db8;
+
+  background-image:url("images/27601361.png");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
 }
 
-.container{
-  max-width:1200px;
-  margin:auto;
-  padding:20px;
+.page{
+  max-width:1180px;
+  margin:0 auto;
+  padding:24px;
 }
 
-.hero{
+.header{
   text-align:center;
-  margin-bottom:30px;
+  margin-bottom:24px;
 }
 
-.catch-copy{
+.catch{
   display:inline-block;
-
-  background:#53c8ff;
-  color:white;
-
-  padding:12px 30px;
-
+  background:#6dccff;
+  color:#fff;
+  font-weight:700;
+  padding:10px 28px;
   border-radius:999px;
-
-  font-weight:bold;
-
-  margin-bottom:20px;
+  margin-bottom:16px;
 }
 
-.hero h1{
-  font-size:
-    clamp(
-      2rem,
-      5vw,
-      4rem
-    );
-
+.header h1{
+  font-size:clamp(2.2rem, 6vw, 4.6rem);
+  line-height:1.15;
   font-weight:900;
-
-  line-height:1.2;
+  color:#2da8ef;
+  text-shadow:
+    3px 3px 0 #fff,
+    -3px -3px 0 #fff,
+    3px -3px 0 #fff,
+    -3px 3px 0 #fff;
 }
 
-.card{
-  background:#f3f3f3;
-
-  border-radius:30px;
-
+.stamp-card{
+  background:rgba(255,255,255,.86);
+  border:4px solid #bce9ff;
+  border-radius:32px;
   padding:30px;
+  box-shadow:0 8px 24px rgba(58,160,220,.18);
 }
 
 .stamp-area{
   display:flex;
-
-  align-items:center;
-
   justify-content:center;
-
-  gap:10px;
-
+  align-items:center;
+  gap:12px;
   overflow-x:auto;
-
-  padding:30px 0;
+  padding:36px 0 26px;
 }
 
 .stamp-item{
   position:relative;
-
   flex-shrink:0;
 }
 
 .stamp-date{
   position:absolute;
-
-  top:-28px;
+  top:-34px;
   left:50%;
-
   transform:translateX(-50%);
-
-  background:#97dfff;
-
-  color:white;
-
-  padding:6px 14px;
-
+  background:#83d7ff;
+  color:#fff;
+  font-weight:900;
   border-radius:999px;
-
-  font-weight:bold;
+  padding:6px 14px;
+  white-space:nowrap;
 }
 
 .stamp-circle{
-
-  width:140px;
-  height:140px;
-
+  width:132px;
+  height:132px;
   border-radius:50%;
-
-  background:white;
-
-  border:6px solid #b6e6ff;
-
+  background:#fff;
+  border:6px solid #b9e9ff;
   display:flex;
-
-  align-items:center;
   justify-content:center;
+  align-items:center;
+}
 
-  overflow:hidden;
+.empty-star{
+  font-size:78px;
+  color:#c9efff;
+  line-height:1;
 }
 
 .stamp-circle img{
-  width:95%;
-  opacity:.18;
-}
-
-.stamp-circle.done img{
-  opacity:1;
-}
-
-.arrow{
-  font-size:36px;
-  color:#55c3ff;
-  font-weight:bold;
+  width:118%;
+  height:118%;
+  object-fit:contain;
+  animation:stampPop .35s ease-out;
 }
 
 .today{
-  animation:pulse 1.2s infinite;
+  animation:todayGlow 1.5s infinite;
 }
 
-@keyframes pulse{
-
-  0%{
+@keyframes todayGlow{
+  0%,100%{
+    box-shadow:0 0 0 rgba(93,200,255,0);
     transform:scale(1);
   }
-
   50%{
-    transform:scale(1.08);
+    box-shadow:0 0 22px rgba(93,200,255,.8);
+    transform:scale(1.05);
   }
+}
 
+@keyframes stampPop{
+  0%{
+    transform:scale(.3) rotate(-18deg);
+    opacity:0;
+  }
+  65%{
+    transform:scale(1.22) rotate(6deg);
+    opacity:1;
+  }
   100%{
-    transform:scale(1);
+    transform:scale(1) rotate(0);
   }
-
 }
 
-.bottom-area{
+.arrow{
+  flex-shrink:0;
+  font-size:34px;
+  font-weight:900;
+  color:#64c7ff;
+}
 
-  margin-top:20px;
-
+.action-area{
   display:grid;
-
-  grid-template-columns:
-    1fr 1fr 1fr;
-
-  gap:20px;
+  grid-template-columns:1fr 1.4fr 1fr;
+  gap:18px;
+  margin-top:24px;
 }
 
-.status-box,
+.progress-box,
 .vote-box,
 .link-box{
-
-  background:white;
-
-  border-radius:20px;
-
+  background:#fff;
+  border:3px solid #d7f3ff;
+  border-radius:22px;
   padding:20px;
-
   text-align:center;
 }
 
-.status-title{
-  margin-bottom:10px;
-}
-
-.progress{
-
+.progress-box strong{
   font-size:48px;
-
-  font-weight:bold;
+  color:#26a8ef;
 }
 
 #voteButton{
-
   width:100%;
-
-  padding:18px;
-
   border:none;
-
-  border-radius:16px;
-
-  background:#4ec9ff;
-
-  color:white;
-
-  font-size:28px;
-
-  font-weight:bold;
-
+  border-radius:18px;
+  background:linear-gradient(180deg,#72d4ff,#34aef2);
+  color:#fff;
+  font-size:32px;
+  font-weight:900;
+  padding:18px;
   cursor:pointer;
-
-  margin:15px 0;
+  box-shadow:0 6px 0 #1595d7;
 }
 
-#voteButton:hover{
-  opacity:.9;
+#voteButton:active{
+  transform:translateY(4px);
+  box-shadow:0 2px 0 #1595d7;
 }
 
-.vote-link{
+.bonus-text{
+  margin-top:14px;
+  font-weight:700;
+  color:#2388c8;
+}
 
+.link-box a{
   display:inline-block;
-
-  margin-top:10px;
-
+  margin-top:12px;
+  color:#fff;
+  background:#43bfff;
   text-decoration:none;
+  font-weight:900;
+  border-radius:999px;
+  padding:12px 24px;
+}
 
-  color:#2f9ae5;
+.art-preview{
+  margin:28px auto 0;
+  max-width:360px;
+  height:220px;
+  border-radius:24px;
+  border:4px dashed #aee5ff;
+  background:rgba(230,247,255,.88);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:#7bcfff;
+  font-weight:900;
+}
 
-  font-weight:bold;
-
-  font-size:20px;
+.question{
+  font-size:80px;
+  line-height:1;
 }
 
 .complete-area{
-
   display:none;
-
-  margin-top:30px;
-
   text-align:center;
+  margin-top:30px;
 }
 
 .complete-area.show{
@@ -252,42 +231,56 @@ body{
 }
 
 .complete-area h2{
-
-  font-size:48px;
-
-  margin-bottom:10px;
+  font-size:42px;
+  color:#20a6ef;
 }
 
-#completeImage{
+.complete-area p{
+  font-size:24px;
+  font-weight:900;
+  margin:10px 0 18px;
+}
 
-  max-width:500px;
+.complete-area img{
+  max-width:520px;
   width:100%;
-
-  margin-top:20px;
+  border-radius:24px;
 }
 
 footer{
-
   text-align:center;
-
-  margin-top:20px;
-
   font-size:12px;
+  margin-top:20px;
+  color:#3c8fc0;
 }
 
-@media(max-width:900px){
+@media(max-width:800px){
+  .page{
+    padding:14px;
+  }
 
-  .bottom-area{
-    grid-template-columns:1fr;
+  .stamp-card{
+    padding:20px;
+  }
+
+  .stamp-area{
+    justify-content:flex-start;
   }
 
   .stamp-circle{
-    width:100px;
-    height:100px;
+    width:102px;
+    height:102px;
+  }
+
+  .empty-star{
+    font-size:60px;
   }
 
   .arrow{
     font-size:24px;
   }
 
+  .action-area{
+    grid-template-columns:1fr;
+  }
 }
