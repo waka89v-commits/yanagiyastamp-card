@@ -419,17 +419,25 @@ body{
 
 .art-preview{
   margin:28px auto 0;
-  max-width:360px;
+
+  width:360px;
   height:220px;
+
   border-radius:24px;
   border:4px dashed #aee5ff;
+
   background:rgba(230,247,255,.88);
+
   display:flex;
   flex-direction:column;
+
   justify-content:center;
   align-items:center;
+
   color:#7bcfff;
   font-weight:900;
+
+  overflow:hidden;
 }
 
 .question{
@@ -437,118 +445,19 @@ body{
   line-height:1;
 }
 
-.complete-area{
-  display:none;
-  text-align:center;
-  margin-top:30px;
-}
-
-.complete-area.show{
-  display:block;
-}
-
-.complete-area h2{
-  font-size:42px;
-  color:#20a6ef;
-}
-
-.complete-area p{
-  font-size:24px;
-  font-weight:900;
-  margin:10px 0 18px;
-}
-
-.complete-area img{
-  max-width:520px;
-  width:100%;
-  border-radius:24px;
-}
-
-footer{
-  text-align:center;
-  font-size:12px;
-  margin-top:20px;
-  color:#3c8fc0;
-}
-
-@media(max-width:800px){
-  .page{
-    padding:14px;
-  }
-
-  .stamp-card{
-    padding:20px;
-  }
-
-  .stamp-area{
-    justify-content:flex-start;
-  }
-
-  .stamp-circle{
-    width:102px;
-    height:102px;
-  }
-
-  .empty-star{
-    font-size:60px;
-  }
-
-  .arrow{
-    font-size:24px;
-  }
-
-  .action-area{
-    grid-template-columns:1fr;
-  }
-}
-.completed-art{
-  max-width:520px;
-  height:auto;
-  min-height:220px;
-  padding:12px;
-  border-style:solid;
-  background:#fff;
-}
-
-.complete-art-image{
-  width:100%;
-  max-width:500px;
-  border-radius:20px;
-  display:block;
-}
-
-.external-note{
-  margin-top:28px;
-  font-size:12px;
-  color:#333;
-  font-weight:500;
-
-  .art-preview{
-  overflow:hidden;
-}
-
 .art-preview.completed-art{
-  max-width:520px;
-  width:100%;
-  height:auto;
-  min-height:220px;
-  padding:14px;
-  border-style:solid;
+  border:4px solid #aee5ff;
   background:#fff;
-}
-
-.art-preview.completed-art{
-  max-width:360px;
-  width:100%;
-  height:220px;
-  padding:10px;
-  overflow:hidden;
+  padding:8px;
 }
 
 .complete-art-image{
   width:100%;
   height:100%;
-  object-fit:contain;
-  border-radius:18px;
+
+  object-fit:cover;
+
+  border-radius:16px;
+
   display:block;
 }
