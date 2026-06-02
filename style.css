@@ -396,3 +396,18 @@ footer{
     grid-template-columns:1fr;
   }
 }
+.completed-art{
+  max-width:520px;
+  height:auto;
+  min-height:220px;
+  padding:12px;
+  border-style:solid;
+  background:#fff;
+}
+
+.complete-art-image{
+  width:100%;
+  max-width:500px;
+  border-radius:20px;
+  display:block;
+}
