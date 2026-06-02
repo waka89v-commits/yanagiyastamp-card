@@ -245,8 +245,8 @@ body{
   align-items:center;
   gap:12px;
   overflow-x:auto;
-  padding:52px 0 32px;
-  transform:translateY(18px);
+  padding:70px 0 38px;
+}
 }
   padding:36px 0 26px;
 }
@@ -258,9 +258,11 @@ body{
 
 .stamp-date{
   position:absolute;
-  top:-34px;
+  top:-38px;
   left:50%;
   transform:translateX(-50%);
+  z-index:5;
+
   background:#83d7ff;
   color:#fff;
   font-weight:900;
@@ -278,7 +280,6 @@ body{
   display:flex;
   justify-content:center;
   align-items:center;
-  transform:translateY(-18px);
 }
 
 .empty-star{
