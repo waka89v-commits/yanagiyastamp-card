@@ -245,6 +245,9 @@ body{
   align-items:center;
   gap:12px;
   overflow-x:auto;
+  padding:52px 0 32px;
+  transform:translateY(18px);
+}
   padding:36px 0 26px;
 }
 
