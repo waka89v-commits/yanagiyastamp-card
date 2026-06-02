@@ -131,3 +131,21 @@ voteButton.addEventListener("click", ()=>{
 });
 
 render();
+
+const shareButton =
+  document.getElementById("shareButton");
+
+shareButton.addEventListener("click",()=>{
+
+  const text =
+    "柳谷伊冴くん投票スタンプカードを進めています！✨";
+
+  const url =
+    window.location.href;
+
+  window.open(
+    `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
+    "_blank"
+  );
+
+});
