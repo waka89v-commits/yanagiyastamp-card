@@ -8,13 +8,13 @@ body{
   min-height:100vh;
   font-family:"Zen Maru Gothic", sans-serif;
   color:#247db8;
-
   background-image:url("images/27601361.png");
   background-size:cover;
   background-position:center;
   background-attachment:fixed;
 }
 
+/* キラキラ装飾 */
 .decoration{
   position:fixed;
   inset:0;
@@ -33,169 +33,35 @@ body{
     0 0 16px rgba(120,210,255,.6);
 }
 
-.deco-1{
-  top:8%;
-  left:5%;
-  font-size:34px;
-}
-
-.deco-2{
-  top:13%;
-  right:7%;
-  font-size:28px;
-  animation-delay:.4s;
-}
-
-.deco-3{
-  top:31%;
-  left:7%;
-  font-size:26px;
-  animation-delay:.8s;
-}
-
-.deco-4{
-  top:42%;
-  right:4%;
-  font-size:38px;
-  animation-delay:1.2s;
-}
-
-.deco-5{
-  bottom:18%;
-  left:8%;
-  font-size:25px;
-  animation-delay:.7s;
-}
-
-.deco-6{
-  bottom:10%;
-  right:10%;
-  font-size:34px;
-  animation-delay:1.5s;
-}
-
-.deco-7{
-  top:68%;
-  left:18%;
-  font-size:22px;
-  animation-delay:.2s;
-}
-
-.deco-8{
-  top:62%;
-  right:22%;
-  font-size:23px;
-  animation-delay:1s;
-}
-
-.deco-9{
-  top:24%;
-  left:48%;
-  font-size:20px;
-  animation-delay:1.8s;
-}
-
-.deco-10{
-  bottom:28%;
-  right:38%;
-  font-size:26px;
-  animation-delay:.9s;
-  .deco-11{
-  top:22%;
-  left:28%;
-  font-size:22px;
-  animation-delay:.3s;
-}
-
-.deco-12{
-  top:30%;
-  right:26%;
-  font-size:20px;
-  animation-delay:.9s;
-}
-
-.deco-13{
-  top:48%;
-  left:24%;
-  font-size:18px;
-  animation-delay:1.4s;
-}
-
-.deco-14{
-  top:51%;
-  right:25%;
-  font-size:22px;
-  animation-delay:.6s;
-}
-
-.deco-15{
-  bottom:31%;
-  left:34%;
-  font-size:20px;
-  animation-delay:1.1s;
-}
-
-.deco-16{
-  bottom:29%;
-  right:34%;
-  font-size:18px;
-  animation-delay:1.7s;
-}
-  .deco-11{
-  top:22%;
-  left:28%;
-  font-size:22px;
-  animation-delay:.3s;
-}
-
-.deco-12{
-  top:30%;
-  right:26%;
-  font-size:20px;
-  animation-delay:.9s;
-}
-
-.deco-13{
-  top:48%;
-  left:24%;
-  font-size:18px;
-  animation-delay:1.4s;
-}
-
-.deco-14{
-  top:51%;
-  right:25%;
-  font-size:22px;
-  animation-delay:.6s;
-}
-
-.deco-15{
-  bottom:31%;
-  left:34%;
-  font-size:20px;
-  animation-delay:1.1s;
-}
-
-.deco-16{
-  bottom:29%;
-  right:34%;
-  font-size:18px;
-  animation-delay:1.7s;
-}
-}
+.deco-1{ top:8%; left:5%; font-size:34px; }
+.deco-2{ top:13%; right:7%; font-size:28px; animation-delay:.4s; }
+.deco-3{ top:31%; left:7%; font-size:26px; animation-delay:.8s; }
+.deco-4{ top:42%; right:4%; font-size:38px; animation-delay:1.2s; }
+.deco-5{ bottom:18%; left:8%; font-size:25px; animation-delay:.7s; }
+.deco-6{ bottom:10%; right:10%; font-size:34px; animation-delay:1.5s; }
+.deco-7{ top:68%; left:18%; font-size:22px; animation-delay:.2s; }
+.deco-8{ top:62%; right:22%; font-size:23px; animation-delay:1s; }
+.deco-9{ top:24%; left:48%; font-size:20px; animation-delay:1.8s; }
+.deco-10{ bottom:28%; right:38%; font-size:26px; animation-delay:.9s; }
+.deco-11{ top:22%; left:28%; font-size:22px; animation-delay:.3s; }
+.deco-12{ top:30%; right:26%; font-size:20px; animation-delay:.9s; }
+.deco-13{ top:48%; left:24%; font-size:18px; animation-delay:1.4s; }
+.deco-14{ top:51%; right:25%; font-size:22px; animation-delay:.6s; }
+.deco-15{ bottom:31%; left:34%; font-size:20px; animation-delay:1.1s; }
+.deco-16{ bottom:29%; right:34%; font-size:18px; animation-delay:1.7s; }
 
 @keyframes twinkle{
   0%,100%{
     opacity:.28;
     transform:scale(1) rotate(0deg);
   }
-
   50%{
     opacity:1;
     transform:scale(1.25) rotate(10deg);
   }
 }
 
+/* 全体 */
 .page{
   position:relative;
   z-index:1;
@@ -231,6 +97,7 @@ body{
     -3px 3px 0 #fff;
 }
 
+/* スタンプカード */
 .stamp-card{
   background:rgba(255,255,255,.86);
   border:4px solid #bce9ff;
@@ -247,9 +114,6 @@ body{
   overflow-x:auto;
   padding:70px 0 38px;
 }
-}
-  padding:36px 0 26px;
-}
 
 .stamp-item{
   position:relative;
@@ -262,7 +126,6 @@ body{
   left:50%;
   transform:translateX(-50%);
   z-index:5;
-
   background:#83d7ff;
   color:#fff;
   font-weight:900;
@@ -280,20 +143,21 @@ body{
   display:flex;
   justify-content:center;
   align-items:center;
+  overflow:hidden;
 }
 
 .empty-star{
   font-size:78px;
   color:#c9efff;
   line-height:1;
-  transform:translateY(-6px);
+  transform:translateY(10px);
 }
 
 .stamp-circle img{
-  width:148%;
-  height:148%;
+  width:130%;
+  height:130%;
   object-fit:contain;
-  transform:translateY(-3px);
+  transform:translateY(-2px);
   animation:stampPop .35s ease-out;
 }
 
@@ -305,7 +169,6 @@ body{
   0%,100%{
     box-shadow:0 0 0 rgba(93,200,255,0);
   }
-
   50%{
     box-shadow:0 0 22px rgba(93,200,255,.8);
   }
@@ -313,17 +176,15 @@ body{
 
 @keyframes stampPop{
   0%{
-    transform:translateY(-3px) scale(.3) rotate(-18deg);
+    transform:translateY(-2px) scale(.3) rotate(-18deg);
     opacity:0;
   }
-
   65%{
-    transform:translateY(-3px) scale(1.22) rotate(6deg);
+    transform:translateY(-2px) scale(1.22) rotate(6deg);
     opacity:1;
   }
-
   100%{
-    transform:translateY(-3px) scale(1) rotate(0);
+    transform:translateY(-2px) scale(1) rotate(0);
   }
 }
 
@@ -334,6 +195,7 @@ body{
   color:#64c7ff;
 }
 
+/* 下部ボックス */
 .action-area{
   display:grid;
   grid-template-columns:1fr 1.4fr 1fr;
@@ -349,15 +211,22 @@ body{
   border-radius:22px;
   padding:20px;
   text-align:center;
-
-   display:flex;
-  flex-direction:column;
-  justify-content:center;
 }
 
 .progress-box strong{
   font-size:48px;
   color:#26a8ef;
+}
+
+.progress-divider{
+  margin:10px 0 14px;
+  text-align:center;
+  color:#8fdcff;
+  font-size:16px;
+  letter-spacing:10px;
+  text-shadow:
+    0 0 8px rgba(255,255,255,.9),
+    0 0 14px rgba(143,220,255,.8);
 }
 
 .vote-lead{
@@ -370,19 +239,28 @@ body{
 #voteButton{
   width:100%;
   border:none;
-  border-radius:18px;
-  background:linear-gradient(180deg,#72d4ff,#34aef2);
+  border-radius:20px;
+  background:linear-gradient(
+    180deg,
+    #9be7ff 0%,
+    #5ecfff 45%,
+    #2ba8f2 100%
+  );
   color:#fff;
   font-size:32px;
   font-weight:900;
   padding:18px;
   cursor:pointer;
-  box-shadow:0 6px 0 #1595d7;
+  box-shadow:
+    0 6px 0 #1595d7,
+    0 0 18px rgba(99,205,255,.45);
 }
 
 #voteButton:active{
   transform:translateY(4px);
-  box-shadow:0 2px 0 #1595d7;
+  box-shadow:
+    0 2px 0 #1595d7,
+    0 0 12px rgba(99,205,255,.45);
 }
 
 .bonus-text{
@@ -391,52 +269,45 @@ body{
   color:#2388c8;
 }
 
+/* 投票ページボタン */
+.vote-link-btn,
 .link-box a{
   display:inline-block;
-
-  margin-top:50px;
-
+  margin-top:40px;
   color:#fff;
-
   background:linear-gradient(
     180deg,
     #86deff,
     #43bfff
   );
-
   text-decoration:none;
-
   font-weight:900;
-
   border-radius:999px;
-
   padding:12px 24px;
-
-  box-shadow:
-    0 4px 0 #2da9e8;
-}
+  box-shadow:0 4px 0 #2da9e8;
 }
 
+.external-note{
+  margin-top:12px;
+  font-size:12px;
+  color:#333;
+  font-weight:500;
+}
+
+/* 特別なアート */
 .art-preview{
   margin:28px auto 0;
-
   width:360px;
   height:220px;
-
   border-radius:24px;
   border:4px dashed #aee5ff;
-
   background:rgba(230,247,255,.88);
-
   display:flex;
   flex-direction:column;
-
   justify-content:center;
   align-items:center;
-
   color:#7bcfff;
   font-weight:900;
-
   overflow:hidden;
 }
 
@@ -448,16 +319,87 @@ body{
 .art-preview.completed-art{
   border:4px solid #aee5ff;
   background:#fff;
-  padding:8px;
+  padding:10px;
 }
 
 .complete-art-image{
   width:100%;
   height:100%;
-
-  object-fit:cover;
-
+  object-fit:contain;
   border-radius:16px;
-
   display:block;
+}
+
+/* completeAreaは使わない場合もあるので非表示前提 */
+.complete-area{
+  display:none;
+}
+
+.complete-area.show{
+  display:block;
+  text-align:center;
+  margin-top:30px;
+}
+
+.complete-area h2{
+  font-size:42px;
+  color:#20a6ef;
+}
+
+.complete-area p{
+  font-size:24px;
+  font-weight:900;
+  margin:10px 0 18px;
+}
+
+.complete-area img{
+  max-width:520px;
+  width:100%;
+  border-radius:24px;
+}
+
+footer{
+  text-align:center;
+  font-size:12px;
+  margin-top:20px;
+  color:#3c8fc0;
+}
+
+/* スマホ */
+@media(max-width:800px){
+  .page{
+    padding:14px;
+  }
+
+  .stamp-card{
+    padding:20px;
+  }
+
+  .stamp-area{
+    justify-content:flex-start;
+    padding:64px 0 34px;
+  }
+
+  .stamp-circle{
+    width:102px;
+    height:102px;
+  }
+
+  .empty-star{
+    font-size:60px;
+    transform:translateY(8px);
+  }
+
+  .arrow{
+    font-size:24px;
+  }
+
+  .action-area{
+    grid-template-columns:1fr;
+  }
+
+  .art-preview{
+    width:100%;
+    max-width:360px;
+  }
 }
