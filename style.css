@@ -522,3 +522,26 @@ footer{
   font-size:12px;
   color:#333;
   font-weight:500;
+
+  .art-preview{
+  overflow:hidden;
+}
+
+.art-preview.completed-art{
+  max-width:520px;
+  width:100%;
+  height:auto;
+  min-height:220px;
+  padding:14px;
+  border-style:solid;
+  background:#fff;
+}
+
+.complete-art-image{
+  width:100%;
+  max-width:480px;
+  height:auto;
+  object-fit:contain;
+  border-radius:18px;
+  display:block;
+}
