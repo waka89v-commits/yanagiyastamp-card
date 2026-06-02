@@ -15,7 +15,108 @@ body{
   background-attachment:fixed;
 }
 
+.decoration{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+  overflow:hidden;
+}
+
+.deco{
+  position:absolute;
+  color:rgba(92,196,255,.55);
+  font-weight:900;
+  animation:twinkle 2.8s infinite ease-in-out;
+  text-shadow:
+    0 0 8px rgba(255,255,255,.9),
+    0 0 16px rgba(120,210,255,.6);
+}
+
+.deco-1{
+  top:8%;
+  left:5%;
+  font-size:34px;
+}
+
+.deco-2{
+  top:13%;
+  right:7%;
+  font-size:28px;
+  animation-delay:.4s;
+}
+
+.deco-3{
+  top:31%;
+  left:7%;
+  font-size:26px;
+  animation-delay:.8s;
+}
+
+.deco-4{
+  top:42%;
+  right:4%;
+  font-size:38px;
+  animation-delay:1.2s;
+}
+
+.deco-5{
+  bottom:18%;
+  left:8%;
+  font-size:25px;
+  animation-delay:.7s;
+}
+
+.deco-6{
+  bottom:10%;
+  right:10%;
+  font-size:34px;
+  animation-delay:1.5s;
+}
+
+.deco-7{
+  top:68%;
+  left:18%;
+  font-size:22px;
+  animation-delay:.2s;
+}
+
+.deco-8{
+  top:62%;
+  right:22%;
+  font-size:23px;
+  animation-delay:1s;
+}
+
+.deco-9{
+  top:24%;
+  left:48%;
+  font-size:20px;
+  animation-delay:1.8s;
+}
+
+.deco-10{
+  bottom:28%;
+  right:38%;
+  font-size:26px;
+  animation-delay:.9s;
+}
+
+@keyframes twinkle{
+  0%,100%{
+    opacity:.28;
+    transform:scale(1) rotate(0deg);
+  }
+
+  50%{
+    opacity:1;
+    transform:scale(1.25) rotate(10deg);
+  }
+}
+
 .page{
+  position:relative;
+  z-index:1;
   max-width:1180px;
   margin:0 auto;
   padding:24px;
@@ -99,12 +200,14 @@ body{
   font-size:78px;
   color:#c9efff;
   line-height:1;
+  transform:translateY(-3px);
 }
 
 .stamp-circle img{
   width:118%;
   height:118%;
   object-fit:contain;
+  transform:translateY(-3px);
   animation:stampPop .35s ease-out;
 }
 
@@ -115,25 +218,26 @@ body{
 @keyframes todayGlow{
   0%,100%{
     box-shadow:0 0 0 rgba(93,200,255,0);
-    transform:scale(1);
   }
+
   50%{
     box-shadow:0 0 22px rgba(93,200,255,.8);
-    transform:scale(1.05);
   }
 }
 
 @keyframes stampPop{
   0%{
-    transform:scale(.3) rotate(-18deg);
+    transform:translateY(-3px) scale(.3) rotate(-18deg);
     opacity:0;
   }
+
   65%{
-    transform:scale(1.22) rotate(6deg);
+    transform:translateY(-3px) scale(1.22) rotate(6deg);
     opacity:1;
   }
+
   100%{
-    transform:scale(1) rotate(0);
+    transform:translateY(-3px) scale(1) rotate(0);
   }
 }
 
@@ -164,6 +268,13 @@ body{
 .progress-box strong{
   font-size:48px;
   color:#26a8ef;
+}
+
+.vote-lead{
+  margin-bottom:10px;
+  font-size:14px;
+  font-weight:700;
+  color:#333;
 }
 
 #voteButton{
