@@ -6,111 +6,67 @@
   <title>柳谷伊冴くん投票スタンプカード</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+  <div class="page">
 
-  <header class="hero">
+    <header class="header">
+      <p class="catch">4日間連続で投票してスタンプを集めよう！</p>
 
-    <div class="catch-copy">
-      5日連続で投票してスタンプを集めよう！
-    </div>
+      <h1>
+        柳谷伊冴くん<br>
+        投票スタンプカード
+      </h1>
+    </header>
 
-    <h1>
-      柳谷伊冴くん<br>
-      投票スタンプカード
-    </h1>
+    <main class="stamp-card">
 
-  </header>
+      <div id="stampArea" class="stamp-area"></div>
 
-  <main class="card">
+      <section class="action-area">
 
-    <div id="stampArea" class="stamp-area">
-      <!-- JSで生成 -->
-    </div>
-
-    <section class="bottom-area">
-
-      <div class="status-box">
-
-        <div class="status-title">
-          現在の達成状況
+        <div class="progress-box">
+          <p>現在の達成状況</p>
+          <strong><span id="progressCount">0</span>/4</strong>
         </div>
 
-        <div class="progress">
-          <span id="progressCount">0</span>/5
+        <div class="vote-box">
+          <button id="voteButton">投票した！</button>
+          <p class="bonus-text">全て貯まると特別なアートが登場！</p>
         </div>
 
-      </div>
-
-      <div class="vote-box">
-
-        <div class="vote-text">
-          投票で1日1個スタンプをゲット！
+        <div class="link-box">
+          <p>まだ投票していない？</p>
+          <a href="https://produce101.jp/feature/vote" target="_blank" rel="noopener noreferrer">
+            投票ページへ
+          </a>
         </div>
 
-        <button id="voteButton">
-          投票した！
-        </button>
+      </section>
 
-        <p>
-          ※1日1回のみ取得可能
-        </p>
+      <section id="artPreview" class="art-preview">
+        <p class="question">?</p>
+        <p>特別なアート</p>
+      </section>
 
-      </div>
+      <section id="completeArea" class="complete-area">
+        <h2>🎉 COMPLETE 🎉</h2>
+        <p>投票ありがとうございます！</p>
 
-      <div class="link-box">
+        <img src="images/complete.png" alt="特別なアート" onerror="this.style.display='none'">
+      </section>
 
-        <div class="link-title">
-          まだ投票していない？
-        </div>
+    </main>
 
-        <a
-          href="https://produce101.jp/feature/vote"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="vote-link"
-        >
-          投票ページへ
-        </a>
+    <footer>
+      ※こちらはファンメイドサイトです
+    </footer>
 
-      </div>
+  </div>
 
-    </section>
-
-    <section
-      id="completeArea"
-      class="complete-area"
-    >
-
-      <h2>
-        🎉 COMPLETE 🎉
-      </h2>
-
-      <p>
-        投票ありがとうございます！
-      </p>
-
-      <!-- 後日画像追加 -->
-      <img
-        src="images/complete.png"
-        alt="complete"
-        id="completeImage"
-      >
-
-    </section>
-
-  </main>
-
-  <footer>
-    ※こちらはファンメイドサイトです
-  </footer>
-
-</div>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
