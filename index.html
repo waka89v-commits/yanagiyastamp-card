@@ -1,13 +1,116 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>柳谷伊冴くん投票スタンプカード</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>柳谷伊冴くん投票スタンプカード</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family:sans-serif;padding:40px;text-align:center">
-<h1>柳谷伊冴くん投票スタンプカード</h1>
-<p>完成版サンプルファイルです。画像フォルダ(images)に stamp.png / candidate.png / complete.png を配置してご利用ください。</p>
-<p>このファイルをベースにGitHub Pagesへ公開できます。</p>
+
+<body>
+
+<div class="container">
+
+  <header class="hero">
+
+    <div class="catch-copy">
+      5日連続で投票してスタンプを集めよう！
+    </div>
+
+    <h1>
+      柳谷伊冴くん<br>
+      投票スタンプカード
+    </h1>
+
+  </header>
+
+  <main class="card">
+
+    <div id="stampArea" class="stamp-area">
+      <!-- JSで生成 -->
+    </div>
+
+    <section class="bottom-area">
+
+      <div class="status-box">
+
+        <div class="status-title">
+          現在の達成状況
+        </div>
+
+        <div class="progress">
+          <span id="progressCount">0</span>/5
+        </div>
+
+      </div>
+
+      <div class="vote-box">
+
+        <div class="vote-text">
+          投票で1日1個スタンプをゲット！
+        </div>
+
+        <button id="voteButton">
+          投票した！
+        </button>
+
+        <p>
+          ※1日1回のみ取得可能
+        </p>
+
+      </div>
+
+      <div class="link-box">
+
+        <div class="link-title">
+          まだ投票していない？
+        </div>
+
+        <a
+          href="https://produce101.jp/feature/vote"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="vote-link"
+        >
+          投票ページへ
+        </a>
+
+      </div>
+
+    </section>
+
+    <section
+      id="completeArea"
+      class="complete-area"
+    >
+
+      <h2>
+        🎉 COMPLETE 🎉
+      </h2>
+
+      <p>
+        投票ありがとうございます！
+      </p>
+
+      <!-- 後日画像追加 -->
+      <img
+        src="images/complete.png"
+        alt="complete"
+        id="completeImage"
+      >
+
+    </section>
+
+  </main>
+
+  <footer>
+    ※こちらはファンメイドサイトです
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
