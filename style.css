@@ -389,13 +389,28 @@ body{
 
 .link-box a{
   display:inline-block;
-  margin-top:12px;
+
+  margin-top:28px;
+
   color:#fff;
-  background:#43bfff;
+
+  background:linear-gradient(
+    180deg,
+    #86deff,
+    #43bfff
+  );
+
   text-decoration:none;
+
   font-weight:900;
+
   border-radius:999px;
+
   padding:12px 24px;
+
+  box-shadow:
+    0 4px 0 #2da9e8;
+}
 }
 
 .art-preview{
