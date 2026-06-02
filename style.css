@@ -193,14 +193,14 @@ body{
   display:flex;
   justify-content:center;
   align-items:center;
-  transform:translateY(-8px);
+  transform:translateY(-18px);
 }
 
 .empty-star{
   font-size:78px;
   color:#c9efff;
   line-height:1;
-  transform:translateY(-3px);
+  transform:translateY(-13px);
 }
 
 .stamp-circle img{
