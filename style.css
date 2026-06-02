@@ -537,10 +537,17 @@ footer{
   background:#fff;
 }
 
+.art-preview.completed-art{
+  max-width:360px;
+  width:100%;
+  height:220px;
+  padding:10px;
+  overflow:hidden;
+}
+
 .complete-art-image{
   width:100%;
-  max-width:480px;
-  height:auto;
+  height:100%;
   object-fit:contain;
   border-radius:18px;
   display:block;
