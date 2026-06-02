@@ -290,8 +290,8 @@ body{
 }
 
 .stamp-circle img{
-  width:128%;
-  height:128%;
+  width:148%;
+  height:148%;
   object-fit:contain;
   transform:translateY(-3px);
   animation:stampPop .35s ease-out;
