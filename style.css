@@ -67,24 +67,17 @@ body{
 
 .catch-image{
   display:block;
-
   margin:0 auto 20px;
-
   max-width:700px;
-
   width:95%;
 }
 
 .title-image{
   display:block;
   margin:0 auto;
-
   max-width:1400px;
-
   width:120%;
-
   transform:translateX(-10%);
-}
 }
 
 /* カード */
@@ -120,53 +113,34 @@ body{
   justify-content:center;
 }
 
-
 .stamp-circle{
   width:180px;
   height:180px;
-
   display:flex;
   justify-content:center;
   align-items:center;
-
   overflow:visible;
-
   flex-shrink:0;
-
   position:relative;
 }
+
 .stamp-base-image{
   position:absolute;
-
   width:140%;
   height:140%;
-
   left:50%;
   top:50%;
-
   transform:translate(-50%,-50%);
-
   object-fit:contain;
-}
-
-
-.unstamped-icon{
-  width:72%;
-  height:72%;
-  object-fit:contain;
-  opacity:.3;
+  z-index:1;
 }
 
 .stamp-image{
   position:relative;
-
   z-index:2;
-
   width:130%;
   height:130%;
-
   object-fit:contain;
-
   animation:stampPop .35s ease-out;
 }
 
@@ -192,15 +166,15 @@ body{
 
 @keyframes stampPop{
   0%{
-    transform:translateY(-2px) scale(.3) rotate(-18deg);
+    transform:scale(.3) rotate(-18deg);
     opacity:0;
   }
   65%{
-    transform:translateY(-2px) scale(1.22) rotate(6deg);
+    transform:scale(1.22) rotate(6deg);
     opacity:1;
   }
   100%{
-    transform:translateY(-2px) scale(1) rotate(0);
+    transform:scale(1) rotate(0);
   }
 }
 
@@ -263,7 +237,6 @@ body{
   box-shadow:
     0 6px 0 #1595d7,
     0 0 18px rgba(99,205,255,.45);
-
   display:flex;
   align-items:center;
   justify-content:center;
@@ -371,8 +344,9 @@ footer{
   }
 
   .title-image{
-    width:96%;
-    max-width:560px;
+    width:110%;
+    max-width:640px;
+    transform:translateX(-5%);
   }
 
   .stamp-card{
@@ -384,29 +358,24 @@ footer{
     padding:56px 14px 34px;
   }
 
-.stamp-circle{
-  width:140px;
-  height:140px;
-}
-
-  .stamp-base-image{
-  width:125%;
-  height:125%;
-}
-
-  .unstamped-icon{
-    width:72%;
-    height:72%;
+  .stamp-circle{
+    width:120px;
+    height:120px;
   }
 
- .stamp-image{
-  width:115%;
-  height:115%;
-}
+  .stamp-base-image{
+    width:115%;
+    height:115%;
+  }
+
+  .stamp-image{
+    width:105%;
+    height:105%;
+  }
+
   .arrow{
     font-size:30px;
   }
-
 
   .action-area{
     grid-template-columns:1fr;
