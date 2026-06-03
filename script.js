@@ -44,39 +44,37 @@ function getLocalDateString(){
 function render(){
   stampArea.innerHTML = "";
 
-  const todayString = getLocalDateString();
-
   dates.forEach((item,index)=>{
     const acquired = stamps.includes(item.date);
-    const isToday = todayString === item.date;
 
     const stampItem = document.createElement("div");
     stampItem.className = "stamp-item";
 
- stampItem.innerHTML = `
+    stampItem.innerHTML = `
+      <div class="stamp-circle">
 
-  <div class="stamp-circle ${!acquired && isToday ? "today" : ""}">
-
-    <img
-      src="${item.base}"
-      alt=""
-      class="stamp-base-image"
-    >
-
-    ${
-      acquired
-      ? `
         <img
-          src="${item.stamp}"
-          alt="取得済みスタンプ"
-          class="stamp-image"
+          src="${item.base}"
+          alt=""
+          class="stamp-base-image"
         >
-      `
-      : ""
-    }
 
-  </div>
-`;
+        ${
+          acquired
+          ? `
+            <div class="stamp-image-wrap">
+              <img
+                src="${item.stamp}"
+                alt="取得済みスタンプ"
+                class="stamp-image"
+              >
+            </div>
+          `
+          : ""
+        }
+
+      </div>
+    `;
 
     stampArea.appendChild(stampItem);
 
