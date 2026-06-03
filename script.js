@@ -17,7 +17,7 @@ const dates = [
   }
 ];
 
-const STORAGE_KEY = "yanagiya_vote_stamp_v4";
+const STORAGE_KEY = "yanagiya_vote_stamp_v5";
 
 let stamps = JSON.parse(
   localStorage.getItem(STORAGE_KEY) || "[]"
@@ -57,8 +57,8 @@ function render(){
       <div class="stamp-circle ${!acquired && isToday ? "today" : ""}">
         ${
           acquired
-          ? `<img src="${item.stamp}" alt="取得済みスタンプ">`
-          : `<span class="empty-star">★</span>`
+          ? `<img src="${item.stamp}" alt="取得済みスタンプ" class="stamp-image">`
+          : `<img src="images/hanko-icon.png" alt="未取得スタンプ" class="unstamped-icon">`
         }
       </div>
     `;
