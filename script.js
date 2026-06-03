@@ -118,11 +118,14 @@ voteButton.addEventListener("click", ()=>{
     return;
   }
 
-  stamps.push(todayString);
+stamps.push(todayString);
 
-  localStorage.setItem(
-    STORAGE_KEY,
-    JSON.stringify(stamps)
+lastAddedDate = todayString;
+
+localStorage.setItem(
+  STORAGE_KEY,
+  JSON.stringify(stamps)
+);
   );
 
   render();
