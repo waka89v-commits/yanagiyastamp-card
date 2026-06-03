@@ -383,7 +383,9 @@ footer{
   width:145%;
   height:145%;
 
-  transform:translate(14px,-8px);
+  left:-2px;
+  top:2px;
+}
 }
   .arrow{
     font-size:30px;
