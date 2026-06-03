@@ -143,6 +143,7 @@ body{
   height:130%;
   object-fit:contain;
   animation:stampPop .35s ease-out;
+  transform:translateY(-8px);
 }
 
 .today{
