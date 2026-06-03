@@ -350,7 +350,7 @@ footer{
 @media(max-width:800px){
   .page{
     padding:14px;
-    left:0;
+    left:10;
   }
 
   .header{
