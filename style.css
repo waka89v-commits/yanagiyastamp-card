@@ -158,10 +158,11 @@ body{
 
 .stamp-image{
   position:relative;
+
   z-index:2;
 
-  width:145%;
-  height:145%;
+  width:190%;
+  height:190%;
 
   object-fit:contain;
 
