@@ -17,7 +17,7 @@ const dates = [
   }
 ];
 
-const STORAGE_KEY = "yanagiya_vote_stamp_v3";
+const STORAGE_KEY = "yanagiya_vote_stamp_v4";
 
 let stamps = JSON.parse(
   localStorage.getItem(STORAGE_KEY) || "[]"
@@ -25,7 +25,6 @@ let stamps = JSON.parse(
 
 const stampArea = document.getElementById("stampArea");
 const progressCount = document.getElementById("progressCount");
-const completeArea = document.getElementById("completeArea");
 const artPreview = document.getElementById("artPreview");
 const voteButton = document.getElementById("voteButton");
 
@@ -51,7 +50,9 @@ function render(){
     stampItem.className = "stamp-item";
 
     stampItem.innerHTML = `
-      <div class="stamp-date">${item.date.slice(5).replace("-", "/")}</div>
+      <div class="stamp-date">
+        ${item.date.slice(5).replace("-", "/")}
+      </div>
 
       <div class="stamp-circle ${!acquired && isToday ? "today" : ""}">
         ${
@@ -75,8 +76,6 @@ function render(){
   progressCount.textContent = stamps.length;
 
   if(stamps.length >= dates.length){
-    completeArea.classList.add("show");
-
     artPreview.innerHTML = `
       <img
         src="images/complete.png"
@@ -86,18 +85,14 @@ function render(){
     `;
 
     artPreview.classList.add("completed-art");
-    artPreview.style.display = "flex";
 
   }else{
-    completeArea.classList.remove("show");
-
     artPreview.innerHTML = `
       <p class="question">?</p>
       <p>特別なアート</p>
     `;
 
     artPreview.classList.remove("completed-art");
-    artPreview.style.display = "flex";
   }
 }
 
@@ -118,14 +113,11 @@ voteButton.addEventListener("click", ()=>{
     return;
   }
 
-stamps.push(todayString);
+  stamps.push(todayString);
 
-lastAddedDate = todayString;
-
-localStorage.setItem(
-  STORAGE_KEY,
-  JSON.stringify(stamps)
-);
+  localStorage.setItem(
+    STORAGE_KEY,
+    JSON.stringify(stamps)
   );
 
   render();
@@ -134,21 +126,3 @@ localStorage.setItem(
 });
 
 render();
-
-const shareButton =
-  document.getElementById("shareButton");
-
-shareButton.addEventListener("click",()=>{
-
-  const text =
-    "柳谷伊冴くん投票スタンプカードを進めています！✨";
-
-  const url =
-    window.location.href;
-
-  window.open(
-    `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
-    "_blank"
-  );
-
-});
