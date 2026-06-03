@@ -145,7 +145,7 @@ body{
 
   object-fit:contain;
 
-  left:-15px;
+  left:-25px;
   top:8px;
 
   animation:stampPop .35s ease-out;
