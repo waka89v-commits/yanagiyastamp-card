@@ -54,9 +54,6 @@ function render(){
     stampItem.className = "stamp-item";
 
  stampItem.innerHTML = `
-  <div class="stamp-date">
-    ${item.date.slice(5).replace("-", "/")}
-  </div>
 
   <div class="stamp-circle ${!acquired && isToday ? "today" : ""}">
 
