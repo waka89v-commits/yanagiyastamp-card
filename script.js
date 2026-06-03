@@ -53,19 +53,33 @@ function render(){
     const stampItem = document.createElement("div");
     stampItem.className = "stamp-item";
 
-    stampItem.innerHTML = `
-      <div class="stamp-date">
-        ${item.date.slice(5).replace("-", "/")}
-      </div>
+ stampItem.innerHTML = `
+  <div class="stamp-date">
+    ${item.date.slice(5).replace("-", "/")}
+  </div>
 
-      <div class="stamp-circle ${!acquired && isToday ? "today" : ""}">
-        ${
-          acquired
-          ? `<img src="${item.stamp}" alt="取得済みスタンプ" class="stamp-image">`
-          : `<img src="images/hanko-icon.png" alt="未取得スタンプ" class="unstamped-icon">`
-        }
-      </div>
-    `;
+  <div class="stamp-circle ${!acquired && isToday ? "today" : ""}">
+
+    <img
+      src="${item.base}"
+      alt=""
+      class="stamp-base-image"
+    >
+
+    ${
+      acquired
+      ? `
+        <img
+          src="${item.stamp}"
+          alt="取得済みスタンプ"
+          class="stamp-image"
+        >
+      `
+      : ""
+    }
+
+  </div>
+`;
 
     stampArea.appendChild(stampItem);
 
