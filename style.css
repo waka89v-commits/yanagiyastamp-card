@@ -75,15 +75,12 @@ body{
   margin-bottom:24px;
 }
 
-.catch{
-  display:inline-block;
-  background:#6dccff;
-  color:#fff;
-  font-weight:700;
-  font-size:14px;
-  padding:8px 22px;
-  border-radius:999px;
-  margin-bottom:16px;
+.catch-image{
+  display:block;
+  margin:0 auto 20px;
+  max-width:420px;
+  width:100%;
+}
 }
 }
 
