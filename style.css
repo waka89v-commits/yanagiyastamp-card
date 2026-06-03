@@ -363,21 +363,20 @@ footer{
     padding:56px 14px 34px;
   }
 
-  .stamp-circle{
-    width:160px;
-    height:160px;
-  }
+.stamp-circle{
+  width:180px;
+  height:180px;
+}
 
-  .stamp-base-image{
-    width:145%;
-    height:145%;
-  }
+.stamp-base-image{
+  width:160%;
+  height:160%;
+}
 
-  .stamp-image{
-    width:130%;
-    height:130%;
-  }
-
+.stamp-image{
+  width:145%;
+  height:145%;
+}
   .arrow{
     font-size:30px;
   }
