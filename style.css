@@ -139,11 +139,16 @@ body{
 .stamp-image{
   position:relative;
   z-index:2;
+
   width:130%;
   height:130%;
+
   object-fit:contain;
+
+  left:-8px;
+  top:8px;
+
   animation:stampPop .35s ease-out;
-  transform:translate(10px,-6px);
 }
 
 .today{
