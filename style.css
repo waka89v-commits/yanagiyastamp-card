@@ -135,8 +135,8 @@ body{
 }
 
 .stamp-circle{
-  width:132px;
-  height:132px;
+  width:160px;
+  height:160px;
   border-radius:50%;
   background:#fff;
   border:6px solid #b9e9ff;
@@ -154,10 +154,10 @@ body{
 }
 
 .stamp-circle img{
-  width:130%;
-  height:130%;
+  width:190%;
+  height:190%;
   object-fit:contain;
-  transform:translateY(-2px);
+  transform:translateY(-4px);
   animation:stampPop .35s ease-out;
 }
 
