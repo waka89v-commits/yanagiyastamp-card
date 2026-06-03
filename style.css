@@ -59,7 +59,7 @@ body{
   max-width:1180px;
   margin:0 auto;
   padding:24px;
-  left:7px;
+  left:20px;
 }
 
 .header{
@@ -392,7 +392,7 @@ footer{
     width:185%;
     height:185%;
     margin-left:0px;
-    margin-top:4px;
+    margin-top:0px;
   }
 
   .stamp-image{
