@@ -80,9 +80,11 @@ body{
   background:#6dccff;
   color:#fff;
   font-weight:700;
-  padding:10px 28px;
+  font-size:14px;
+  padding:8px 22px;
   border-radius:999px;
   margin-bottom:16px;
+}
 }
 
 .header h1{
