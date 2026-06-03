@@ -23,7 +23,11 @@
   <div class="page">
 
     <header class="header">
-      <img src="images/title.png" alt="柳谷伊冴くん投票スタンプカード" class="title-image">
+      <img
+        src="images/title.png"
+        alt="柳谷伊冴くん投票スタンプカード"
+        class="title-image"
+      >
     </header>
 
     <main class="stamp-card">
@@ -34,12 +38,6 @@
 
       <section class="action-area">
 
-        <div class="progress-box">
-          <p>現在の達成状況</p>
-          <div class="progress-divider">♡ ✦ ♡</div>
-          <strong><span id="progressCount">0</span>/4</strong>
-        </div>
-
         <div class="vote-box">
           <p class="vote-lead">投票で1日1回スタンプをゲット！</p>
 
@@ -49,6 +47,14 @@
           </button>
 
           <p class="bonus-text">全て貯まると特別なアートが登場！</p>
+        </div>
+
+        <div class="progress-box">
+          <p>現在の達成状況</p>
+
+          <div class="progress-divider">♡ ✦ ♡</div>
+
+          <strong><span id="progressCount">0</span>/4</strong>
         </div>
 
         <div class="link-box">
@@ -71,6 +77,18 @@
       <section id="artPreview" class="art-preview">
         <p class="question">?</p>
         <p>特別なアート</p>
+      </section>
+
+      <section class="share-area">
+        <a
+          id="shareButton"
+          class="share-btn"
+          href="https://twitter.com/intent/tweet?text=%E6%9F%B3%E8%B0%B7%E4%BC%8A%E5%86%B4%E3%81%8F%E3%82%93%E6%8A%95%E7%A5%A8%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%97%E3%82%AB%E3%83%BC%E3%83%89%E3%81%A7%E5%BF%9C%E6%8F%B4%E4%B8%AD%EF%BC%81%20%23%E6%9F%B3%E8%B0%B7%E4%BC%8A%E5%86%B4&url=https%3A%2F%2Fwaka89v-commits.github.io%2Fyanagiyastamp-card%2F"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Xでシェア
+        </a>
       </section>
 
     </main>
