@@ -75,8 +75,10 @@ body{
 .title-image{
   display:block;
   margin:0 auto;
-  max-width:720px;
-  width:92%;
+
+  max-width:1080px;
+
+  width:100%;
 }
 
 /* カード */
