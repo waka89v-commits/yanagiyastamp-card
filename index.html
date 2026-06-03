@@ -16,28 +16,15 @@
     <span class="deco deco-2">★</span>
     <span class="deco deco-3">✧</span>
     <span class="deco deco-4">✦</span>
-    <span class="deco deco-5">★</span>
+    <span class="deco deco-5">♡</span>
     <span class="deco deco-6">✧</span>
-    <span class="deco deco-7">✦</span>
-    <span class="deco deco-8">★</span>
-    <span class="deco deco-9">✧</span>
-    <span class="deco deco-10">✦</span>
-    <span class="deco deco-11">✦</span>
-    <span class="deco deco-12">♡</span>
-    <span class="deco deco-13">✧</span>
-    <span class="deco deco-14">★</span>
-    <span class="deco deco-15">✦</span>
-    <span class="deco deco-16">♡</span>
   </div>
 
   <div class="page">
 
     <header class="header">
-    <img
-  src="images/catch.png"
-  alt="4日間連続で投票してスタンプを集めよう！"
-  class="catch-image"
->
+      <p class="catch">4日間連続で投票してスタンプを集めよう！</p>
+
       <h1>
         柳谷伊冴くん<br>
         投票スタンプカード
@@ -46,67 +33,48 @@
 
     <main class="stamp-card">
 
-      <div id="stampArea" class="stamp-area"></div>
+      <section class="stamp-section">
+        <div id="stampArea" class="stamp-area"></div>
+      </section>
 
       <section class="action-area">
 
         <div class="progress-box">
           <p>現在の達成状況</p>
 
-        <div class="progress-divider">
-    ♡ ✦ ♡
-        </div>
+          <div class="progress-divider">♡ ✦ ♡</div>
 
           <strong><span id="progressCount">0</span>/4</strong>
         </div>
 
-        
-
         <div class="vote-box">
           <p class="vote-lead">投票で1日1回スタンプをゲット！</p>
+
           <button id="voteButton">スタンプを貰う</button>
+
           <p class="bonus-text">全て貯まると特別なアートが登場！</p>
         </div>
 
         <div class="link-box">
-
           <p>まだ投票していない？</p>
 
           <a
-    href="https://produce101.jp/feature/vote"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="vote-link-btn">
-
-    投票ページへ
-
+            href="https://produce101.jp/feature/vote"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="vote-link-btn"
+          >
+            投票ページへ
           </a>
 
-          <p class="external-note">
-    ※外部サイトへ移動します
-  </p>
-</div>
+          <p class="external-note">※外部サイトへ移動します</p>
+        </div>
 
       </section>
 
       <section id="artPreview" class="art-preview">
         <p class="question">?</p>
         <p>特別なアート</p>
-      </section>
-
-      <div class="share-area">
-
-  <button id="shareButton">
-    Xでシェアする
-  </button>
-
-    </div>
-
-      <section id="completeArea" class="complete-area">
-        <h2>🎉 COMPLETE 🎉</h2>
-        <p>投票ありがとうございます！</p>
-
-        <img src="images/complete.png" alt="特別なアート" onerror="this.style.display='none'">
       </section>
 
     </main>
