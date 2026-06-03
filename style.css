@@ -14,6 +14,7 @@ body{
   background-attachment:fixed;
 }
 
+/* キラキラ */
 .decoration{
   position:fixed;
   inset:0;
@@ -50,6 +51,7 @@ body{
   }
 }
 
+/* 全体 */
 .page{
   position:relative;
   z-index:1;
@@ -63,34 +65,21 @@ body{
   margin-bottom:28px;
 }
 
-.catch{
-  display:inline-block;
-  background:#61caff;
-  color:#fff;
-  font-size:14px;
-  font-weight:900;
-  padding:8px 24px;
-  border-radius:999px;
-  margin-bottom:18px;
-  box-shadow:0 4px 0 #31a9e8;
+.catch-image{
+  display:block;
+  margin:0 auto 18px;
+  max-width:460px;
+  width:72%;
 }
 
-.header h1{
-  font-size:clamp(2.4rem, 6.8vw, 5rem);
-  line-height:1.12;
-  font-weight:900;
-  color:#25a8ef;
-  letter-spacing:.04em;
-  text-shadow:
-    0 0 6px #fff,
-    0 0 12px #fff,
-    3px 3px 0 #fff,
-    -3px -3px 0 #fff,
-    3px -3px 0 #fff,
-    -3px 3px 0 #fff,
-    0 0 24px rgba(80,200,255,.6);
+.title-image{
+  display:block;
+  margin:0 auto;
+  max-width:720px;
+  width:92%;
 }
 
+/* カード */
 .stamp-card{
   background:rgba(255,255,255,.88);
   border:4px solid #bce9ff;
@@ -99,6 +88,7 @@ body{
   box-shadow:0 8px 24px rgba(58,160,220,.18);
 }
 
+/* スタンプ */
 .stamp-section{
   width:100%;
   overflow:hidden;
@@ -148,16 +138,17 @@ body{
   align-items:center;
   overflow:hidden;
   flex-shrink:0;
+  position:relative;
 }
 
-.empty-star{
-  font-size:88px;
-  color:#c9efff;
-  line-height:1;
-  transform:translateY(0);
+.unstamped-icon{
+  width:72%;
+  height:72%;
+  object-fit:contain;
+  opacity:.3;
 }
 
-.stamp-circle img{
+.stamp-image{
   width:145%;
   height:145%;
   object-fit:contain;
@@ -199,6 +190,7 @@ body{
   }
 }
 
+/* 下部 */
 .action-area{
   display:grid;
   grid-template-columns:1fr 1.4fr 1fr;
@@ -257,6 +249,17 @@ body{
   box-shadow:
     0 6px 0 #1595d7,
     0 0 18px rgba(99,205,255,.45);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+}
+
+.button-icon{
+  width:44px;
+  height:44px;
+  object-fit:contain;
 }
 
 #voteButton:active{
@@ -295,6 +298,7 @@ body{
   font-weight:500;
 }
 
+/* 特別なアート */
 .art-preview{
   margin:30px auto 0;
   width:360px;
@@ -337,6 +341,7 @@ footer{
   color:#3c8fc0;
 }
 
+/* スマホ */
 @media(max-width:800px){
   .page{
     padding:14px;
@@ -346,9 +351,14 @@ footer{
     margin-bottom:22px;
   }
 
-  .catch{
-    font-size:12px;
-    padding:7px 18px;
+  .catch-image{
+    width:80%;
+    max-width:360px;
+  }
+
+  .title-image{
+    width:96%;
+    max-width:560px;
   }
 
   .stamp-card{
@@ -365,11 +375,12 @@ footer{
     height:132px;
   }
 
-  .empty-star{
-    font-size:74px;
+  .unstamped-icon{
+    width:72%;
+    height:72%;
   }
 
-  .stamp-circle img{
+  .stamp-image{
     width:145%;
     height:145%;
   }
@@ -390,5 +401,14 @@ footer{
   .art-preview{
     width:100%;
     max-width:360px;
+  }
+
+  #voteButton{
+    font-size:28px;
+  }
+
+  .button-icon{
+    width:38px;
+    height:38px;
   }
 }
