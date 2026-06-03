@@ -284,9 +284,26 @@ footer{
 }
 
 /* スマホ */
-@media(max-width:800px){
-  .page{
-    padding:14px;
+.stamp-area{
+  justify-content:flex-start;
+}
+
+.stamp-circle{
+  width:130px;
+  height:130px;
+}
+
+.empty-star{
+  font-size:72px;
+}
+
+.arrow{
+  font-size:30px;
+}
+
+.stamp-date{
+  font-size:13px;
+}
   }
 
   .stamp-card{
