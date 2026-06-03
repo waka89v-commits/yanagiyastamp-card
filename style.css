@@ -145,7 +145,7 @@ body{
 
   object-fit:contain;
 
-  left:-8px;
+  left:-15px;
   top:8px;
 
   animation:stampPop .35s ease-out;
@@ -383,8 +383,6 @@ footer{
   width:145%;
   height:145%;
 
-  left:-2px;
-  top:2px;
 }
 }
   .arrow{
