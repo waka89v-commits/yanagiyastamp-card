@@ -140,8 +140,8 @@ body{
 .stamp-image-wrap{
   position:relative;
   z-index:2;
-  width:160%;
-  height:160%;
+  width:180%;
+  height:180%;
   margin-left:-20px;
   margin-top:8px;
   display:flex;
@@ -386,8 +386,8 @@ footer{
   }
 
   .stamp-image-wrap{
-    width:165%;
-    height:165%;
+    width:175%;
+    height:175%;
     margin-left:-8px;
     margin-top:4px;
   }
