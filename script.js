@@ -1,18 +1,22 @@
 const dates = [
   {
     date: "2026-06-03",
+    base: "images/stamp-base-0603.png",
     stamp: "images/stamp.png"
   },
   {
     date: "2026-06-04",
+    base: "images/stamp-base-0604.png",
     stamp: "images/stamp2.png"
   },
   {
     date: "2026-06-05",
+    base: "images/stamp-base-0605.png",
     stamp: "images/stamp3.png"
   },
   {
     date: "2026-06-06",
+    base: "images/stamp-base-0606.png",
     stamp: "images/stamp4.png"
   }
 ];
